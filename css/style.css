@@ -1,0 +1,27 @@
+.meny {
+    float: right;
+    border: 1px solid solid black;
+}
+    
+ul li{
+    float: left;
+    width: 100px;
+    text-transform: capitalize;
+    list-style-type: none;
+    font-family:sans-serif;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid hotpink ;
+    font-weight: normal;
+}
+ul li a:hover {
+    color: hotpink;
+}
+body{
+    background: white;
+}
+
+
