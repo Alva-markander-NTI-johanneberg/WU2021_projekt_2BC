@@ -1,27 +1,103 @@
-.meny {
-    float: right;
-    border: 1px solid solid black;
-}
-    
-ul li{
-    float: left;
-    width: 100px;
-    text-transform: capitalize;
-    list-style-type: none;
+.container {
+    display: grid;
+    gap: 20px;
+    margin: 35px;
+    background: white;
     font-family:sans-serif;
+    height: 100vh;
+
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows:100px 1fr 1fr 50px;
+
+    grid-template-areas: 
+    "h h li li"
+    "ar ar ar as1"
+    "ar ar ar as2"
+    "f1 f1 f2 f2"
+    
+    ;
+
+
+
 }
 
+header{
+    grid-area: h;
+    font-size: 60px;
+    font-family: fantasy;
+    color: darkgreen;
+}
+
+ul li{
+    grid-area: li;
+    float: left;
+    width: 100px;
+    list-style-type: none;
+   
+    
+    border: 1px solid solid darkgreen;
+    
+  
+    
+
+}
 ul li a{
     text-decoration: none;
     color: black;
-    border-bottom: 2px solid hotpink ;
+    border-bottom:2px solid darkgreen;
     font-weight: normal;
+
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
+
+
 ul li a:hover {
     color: hotpink;
 }
-body{
-    background: white;
+
+article{
+    grid-area: ar;
+    
+
 }
+
+#as1{
+grid-area: as1;
+
+}
+#as2{
+    grid-area: as2;
+    
+    }
+
+#f1{
+    grid-area: f1;
+}
+
+#f2{
+    grid-area: f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
