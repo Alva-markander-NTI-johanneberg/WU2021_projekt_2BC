@@ -7,13 +7,13 @@
     height: 100vh;
 
     grid-template-columns: 20% 30% 30% 20%;
-    grid-template-rows:100px 1fr 1fr 50px;
+    grid-template-rows:auto;
     
 
     grid-template-areas: 
     "h h ul ul"
-    "ar ar as1 as1"
-    "ar ar as2 as2"
+    "ar ar asi1 asi1"
+    "ar ar asi2 asi2"
     "f1 f1 f2 f2"
     
     ;
@@ -78,25 +78,34 @@ img.bred {
     height: 100%;
  }
 
-#as1{
-grid-area: as1;
-background-color: lightgreen;
+#asi1{
+grid-area: asi1;
+color: darkgreen;
+font-size: 40px;
+font-family: fantasy;
 
 }
-#as2{
-    grid-area: as2;
-    background-color: lightgreen;
+
+#asi2{
+    grid-area: asi2;
+    background-color: lightblue;
+    color: darkgreen;
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
     }
 
 #f1{
     grid-area: f1;
-    
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #f2{
     grid-area: f2;
+    font-size: 20px;
   
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
@@ -110,14 +119,14 @@ background-color: lightgreen;
     height: 100vh;
 
     grid-template-columns: 20% 30% 30% 20%;
-    grid-template-rows:100px 1fr 1fr 1fr 50px;
+    grid-template-rows: auto ;
     
 
     grid-template-areas: 
     "h h ul ul"
     "as1 ar ar ar"
-    "as2 as3 as4 as5"
-    "as6 as7 as8 as9"
+    "as2 as2 as3 as4"
+    "as5 as5 as6 as7"
     "f1 f1 f2 f2"
     
     ;
@@ -210,18 +219,6 @@ background-color: lightgreen;
              grid-area: as7;
              background-color: lightgreen;
                 }
-     #as8{
-             grid-area: as8;
-             background-color: lightgreen;
-             }
-     #as9{
-         grid-area: as9;
-         background-color: lightgreen;
-
-    }
-
-
-
 #f1{
     grid-area: f1;
     
@@ -233,6 +230,11 @@ background-color: lightgreen;
     grid-area: f2;
   
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+img.breddarbete {
+    height: 100%;
+    width: 100%;
+
 }
 
 .Album {
@@ -402,6 +404,27 @@ img.bredd {
     height: 100%;
     width: 110%;
 }
+
+
+
+@media screen and (max-width: 768px){
+
+
+    .hem{
+        grid-template-areas: 
+        "h h ul ul"
+        "ar ar ar ar"
+        "asi1 asi1 asi1 asi1"
+        "asi2 asi2 asi2 asi2"
+        "f1 f1 f1 f1"
+        "f2 f2 f2 f2"
+
+        ;
+    }
+
+
+    }
+
 
 
 
