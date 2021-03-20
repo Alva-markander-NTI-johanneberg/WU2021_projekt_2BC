@@ -118,16 +118,16 @@ font-family: fantasy;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 100vh;
 
-    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-columns: 33% 33% 33% ;
     grid-template-rows: auto ;
     
 
     grid-template-areas: 
-    "h h ul ul"
-    "as1 ar ar ar"
-    "as2 as2 as3 as4"
-    "as5 as5 as6 as7"
-    "f1 f1 f2 f2"
+    "h ul ul"
+    "as1 ar ar"
+    "as2 as3 as4"
+    "as5 as6 as7"
+    "f1 f2 f2"
     
     ;
 
@@ -184,6 +184,10 @@ ul li a:hover {
 article{
     grid-area: ar;
     background-color: lightblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: darkgreen;
+    border-radius: 15px 15px 15px 15px;
     
 
 }
@@ -191,34 +195,41 @@ article{
 #as1{
 grid-area: as1;
 background-color: lightgreen;
+border-radius: 15px 15px 15px 15px;
 
 }
 #as2{
     grid-area: as2;
     background-color: lightgreen;
+    border-radius: 15px 15px 15px 15px;
     }
 
     #as3{
         grid-area: as3;
         background-color: lightgreen;
+        border-radius: 15px 15px 15px 15px;
         }
      #as4{
             grid-area: as4;
             background-color: lightgreen;
+            border-radius: 15px 15px 15px 15px;
      }
 
      #as5{
         grid-area: as5;
         background-color: lightgreen;
+        border-radius: 15px 15px 15px 15px;
         }
      #as6{
             grid-area: as6;
             background-color: lightgreen;
-            }
+            border-radius: 15px 15px 15px 15px;
+        }
      #as7{
              grid-area: as7;
              background-color: lightgreen;
-                }
+             border-radius: 15px 15px 15px 15px;
+         }
 #f1{
     grid-area: f1;
     
@@ -233,7 +244,8 @@ background-color: lightgreen;
 }
 img.breddarbete {
     height: 100%;
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
 
 }
 
@@ -424,6 +436,58 @@ img.bredd {
 
 
     }
+
+    @media screen and (max-width: 768px){
+
+
+        .Album{
+            grid-template-areas: 
+            "h h ul ul"
+            "r1 r1 r1 r1"
+            "s1 s1 s1 s1"
+            "r2 r2 r2 r2"
+            "s2 s2 s2 s2"
+            "r3 r3 r3 r3"
+            "s3 s3 s3 s3"
+            "r4 r4 r4 r4"
+            "s4 s4 s4 s4"
+            "f1 f1 f1 f1"
+            "f2 f2 f2 f2"
+    
+            ;
+        }
+        #r1{
+            margin-left: 0px;
+
+        }
+        #r3{
+            margin-left: 0px;
+        }
+
+    
+        }
+
+ @media screen and (max-width: 768px){
+
+
+            .arbete{
+                grid-template-areas: 
+                "h ul ul"
+                "as1 as1 as1"
+                "ar ar ar"
+                "as2 as3 as4"
+                "as5 as6 as7"
+                "f1 f1 f1"
+                "f2 f2 f2"
+                
+        
+                ;
+            }
+        #ar {
+            background-color: white;
+        }
+        
+            }
 
 
 
