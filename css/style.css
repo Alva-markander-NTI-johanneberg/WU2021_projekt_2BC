@@ -236,13 +236,13 @@ border-radius: 15px 15px 15px 15px;
 #f1{
     grid-area: f1;
     
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #f2{
     grid-area: f2;
-  
+    font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 img.breddarbete {
@@ -400,7 +400,7 @@ ul li a:hover {
 #f1{
     grid-area: f1;
     
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: darkgreen;
    
@@ -409,7 +409,7 @@ ul li a:hover {
 
 #f2{
     grid-area: f2;
-    
+    font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: darkgreen;
     
@@ -500,7 +500,7 @@ ul li a:hover {
 }
 #aside2{
     grid-area: aside2;
-    background-color: lightblue;
+    background-color: rgb(225, 192, 203);
     margin-right: 5%;
     color: darkgreen;
     border-radius: 15px 15px 15px 15px;
@@ -514,7 +514,7 @@ ul li a:hover {
 #f1{
     grid-area: f1;
     
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: darkgreen;
    
@@ -523,10 +523,17 @@ ul li a:hover {
 
 #f2{
     grid-area: f2;
-    
+    font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: darkgreen;
     
+}
+
+img.imgtyler {
+    height: auto;
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 58px;
 }
 
 
@@ -619,3 +626,25 @@ ul li a:hover {
 
         }
     }
+
+    @media screen and (max-width: 768px){
+
+
+        .om{
+            grid-template-rows: 20% 20% 50% 50% 10% 10%;
+
+            grid-template-areas: 
+            "h h ul ul"
+            "aside1 aside1 aside1 aside1"
+            "art art art art"
+            "aside2 aside2 aside2 aside2" 
+            "f1 f1 f1 f1"
+            "f2 f2 f2 f2"
+            
+    
+            ;
+        }
+  
+
+    
+}
