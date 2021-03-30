@@ -602,8 +602,9 @@ img.imgtyler {
 
 
             .arbete{
+                
                 grid-template-areas: 
-                "h ul ul"
+                "h ul1 ul1"
                 "as1 as1 as1"
                 "ar ar ar"
                 "as2 as3 as4"
