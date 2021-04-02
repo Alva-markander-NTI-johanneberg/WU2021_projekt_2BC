@@ -532,7 +532,7 @@ img.imgtyler {
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 479px){
 
 
     .hem{
@@ -547,14 +547,12 @@ img.imgtyler {
         "f2 f2 f2 f2"
 
         ;
+        
     }
 
-    
-
-
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 479px){
 
 
         .Album{
@@ -598,7 +596,7 @@ img.imgtyler {
 
         }
 
- @media screen and (max-width: 768px){
+ @media screen and (max-width: 479px){
 
 
             .arbete{
@@ -621,7 +619,7 @@ img.imgtyler {
         }
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 479px){
 
 
         .om{
