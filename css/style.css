@@ -1,3 +1,69 @@
+body,ul{
+    margin: 0;
+}
+
+header{
+    font-size: 30px;
+    color: deepskyblue; 
+    text-align: center;
+}
+
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background: darkgreen;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+footer{
+    font-size: 30px;
+    color: gold;
+    text-align: center;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+.show{
+    left: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+@media screen and (min-width: 768px){
+    .menu-button{
+        display: none;
+    }
+    main{
+        color: darkred;
+    }
+
+}
+
 .hem{
     display: grid;
     gap: 20px;
@@ -34,6 +100,7 @@ ul{
 
     grid-area: ul;
 }
+
 ul li{
     
     float: left;
@@ -41,11 +108,8 @@ ul li{
     list-style-type: none;
     border: 1px solid solid;
     color:darkgreen;
-    
-  
-    
-
 }
+
 ul li a{
     text-decoration: none;
     color: black;
@@ -54,9 +118,7 @@ ul li a{
 
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
-
 
 ul li a:hover{
     color: hotpink;
@@ -74,10 +136,10 @@ img.bred{
  }
 
 #asi1{
-grid-area: asi1;
-color: darkgreen;
-font-size: 40px;
-font-family: fantasy;
+    grid-area: asi1;
+    color: darkgreen;
+    font-size: 40px;
+    font-family: fantasy;
 
 }
 
@@ -86,22 +148,22 @@ font-family: fantasy;
     background-color: lightblue;
     color: darkgreen;
     border-radius: 15px 15px 15px 15px;
-    text-align: center;
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    padding: 20px;
-    }
+}
 
 #f1{
     grid-area: f1;
     font-size: 20px;
+    color: darkgreen;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #f2{
     grid-area: f2;
     font-size: 20px;
-  
+    color: darkgreen;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
@@ -122,45 +184,22 @@ font-family: fantasy;
     "as1 ar ar"
     "as2 as3 as4"
     "as5 as6 as7"
-    "f1 f2 f2"
-    
-    ;
-
-
-
-}
-
-header{
-    grid-area: h;
-    font-size: 65px;
-    font-family: fantasy;
-    
-   
-}
-
-header a{
-    color: darkgreen;
-    text-decoration: darkgreen;
+    "f1 f2 f2";
 }
 
 #ul1{
-
     grid-area: ul1;
     margin-left: 28%;
-   
 }
+
 #ul1 li{
-    
     float: left;
     width: 100px;
     list-style-type: none;
     border: 1px solid solid;
     color: darkgreen;
-    
-  
-    
-
 }
+
 #ul1 li a{
     text-decoration: none;
     color: black;
@@ -174,7 +213,7 @@ header a{
 
 ul li a:hover{
     color: hotpink;
-}
+} 
 
 #ar{
     grid-area: ar;
@@ -188,55 +227,46 @@ ul li a:hover{
 }
 
 #as1{
-grid-area: as1;
-background-color: lightgreen;
-border-radius: 15px 15px 15px 15px;
-
+    grid-area: as1;
+    background-color: lightgreen;
+    border-radius: 15px 15px 15px 15px;
 }
+
 #as2{
     grid-area: as2;
     background-color: lightgreen;
     border-radius: 15px 15px 15px 15px;
     }
 
-    #as3{
-        grid-area: as3;
-        background-color: lightgreen;
-        border-radius: 15px 15px 15px 15px;
-        }
-     #as4{
-            grid-area: as4;
-            background-color: lightgreen;
-            border-radius: 15px 15px 15px 15px;
-     }
-
-     #as5{
-        grid-area: as5;
-        background-color: lightgreen;
-        border-radius: 15px 15px 15px 15px;
-        }
-     #as6{
-            grid-area: as6;
-            background-color: lightgreen;
-            border-radius: 15px 15px 15px 15px;
-        }
-     #as7{
-             grid-area: as7;
-             background-color: lightgreen;
-             border-radius: 15px 15px 15px 15px;
-         }
-#f1{
-    grid-area: f1;
-    
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#as3{
+    grid-area: as3;
+    background-color: lightgreen;
+    border-radius: 15px 15px 15px 15px;
+}
+#as4{
+    grid-area: as4;
+    background-color: lightgreen;
+    border-radius: 15px 15px 15px 15px;
 }
 
-#f2{
-    grid-area: f2;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+#as5{
+    grid-area: as5;
+    background-color: lightgreen;
+    border-radius: 15px 15px 15px 15px;
 }
+
+#as6{
+    grid-area: as6;
+    background-color: lightgreen;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#as7{
+    grid-area: as7;
+    background-color: lightgreen;
+    border-radius: 15px 15px 15px 15px;
+}
+
 img.breddarbete{
     height: 100%;
     width: 50%;
@@ -266,52 +296,6 @@ img.breddarbete{
     "s3 s3 s4 s4"
     "f1 f1 f2 f2"
     ;
-
-
-}
-
-
-header{
-    grid-area: h;
-    font-size: 65px;
-    font-family: fantasy;
-    
-   
-}
-
-header a{
-    color: darkgreen;
-    text-decoration: darkgreen;
-}
-
-ul{
-
-    grid-area: ul;
-}
-ul li{
-    
-    float: left;
-    width: 100px;
-    list-style-type: none;
-   
-    
-    border: 1px solid solid darkgreen; 
-
-}
-ul li a{
-    text-decoration: none;
-    color: black;
-    border-bottom:2px solid;
-    color: darkgreen;
-    margin-left: 50px;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-
-ul li a:hover{
-    color: hotpink;
 }
 
 #r1 {
@@ -353,9 +337,7 @@ ul li a:hover{
     font-family: fantasy;
     font-size: 30px;
     color: darkgreen;
-    margin-left: 25%;
-    
-    
+    margin-left: 25%;  
 }
 
 #s2 {
@@ -388,26 +370,6 @@ ul li a:hover{
     margin-right: 25%;
 }
 
-
-
-#f1{
-    grid-area: f1;
-    
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: darkgreen;
-   
-    
-}
-
-#f2{
-    grid-area: f2;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: darkgreen;
-    
-}
-
 img.bredd {
     height: 100%;
     width: 110%;
@@ -430,52 +392,6 @@ img.bredd {
     "art art aside2 aside2"
     "f1 f1 f2 f2"
     ;
-}
-
-header{
-    grid-area: h;
-    font-size: 65px;
-    font-family: fantasy;
-    
-   
-}
-
-header a{
-    color: darkgreen;
-    text-decoration: darkgreen;
-}
-
-ul{
-
-    grid-area: ul;
-}
-ul li{
-    
-    float: left;
-    width: 100px;
-    list-style-type: none;
-    border: 1px solid solid;
-    color: darkgreen;
-
-    
-  
-    
-
-}
-ul li a{
-    text-decoration: none;
-    color: black;
-    border-bottom:2px solid darkgreen;
-    font-weight: normal;
-
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-
-ul li a:hover {
-    color: hotpink;
 }
 
 #artic {
@@ -502,27 +418,6 @@ ul li a:hover {
     padding: 12px;
 }
 
-
-
-
-#f1{
-    grid-area: f1;
-    
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: darkgreen;
-   
-    
-}
-
-#f2{
-    grid-area: f2;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: darkgreen;
-    
-}
-
 img.imgtyler {
     height: auto;
     width: 100%;
@@ -532,111 +427,101 @@ img.imgtyler {
 
 
 
+ @media screen and (max-width: 768px){ 
 
-@media screen and (max-width: 768px){
 
+    .wrapper{
+        background-color: cadetblue;
+    }
 
+    main{
+        color: darkgreen;
+    }
+
+    .bort{
+        display: none;
+    }
+    
     .hem{
-
-
         grid-template-areas: 
-        "h h ul ul"
+        "ul ul h h"
         "ar ar ar ar"
         "asi1 asi1 asi1 asi1"
         "asi2 asi2 asi2 asi2"
         "f1 f1 f1 f1"
-        "f2 f2 f2 f2"
-
-        ;
-        
+        "f2 f2 f2 f2";
+ 
     }
 
     
+    .Album{
+        grid-template-areas: 
+        "h h ul ul"
+        "r1 r1 r1 r1"
+        "s1 s1 s1 s1"
+        "r2 r2 r2 r2"
+        "s2 s2 s2 s2"
+        "r3 r3 r3 r3"
+        "s3 s3 s3 s3"
+        "r4 r4 r4 r4"
+        "s4 s4 s4 s4"
+        "f1 f1 f1 f1"
+        "f2 f2 f2 f2";
+    }
 
- 
+    #r1{
+        margin-left: 0px;
+    }
 
+    #r3{
+        margin-left: 0px;
+    }
 
-        .Album{
-            grid-template-areas: 
-            "h h ul ul"
-            "r1 r1 r1 r1"
-            "s1 s1 s1 s1"
-            "r2 r2 r2 r2"
-            "s2 s2 s2 s2"
-            "r3 r3 r3 r3"
-            "s3 s3 s3 s3"
-            "r4 r4 r4 r4"
-            "s4 s4 s4 s4"
-            "f1 f1 f1 f1"
-            "f2 f2 f2 f2"
-    
-            ;
-        }
-        #r1{
-            margin-left: 0px;
+    #s1{
+        margin-right: 25%;
+    }
 
-        }
-        #r3{
-            margin-left: 0px;
-        }
-        #s1{
-            
-            margin-right: 25%;
-            
-        }
-        #s2{
-            margin-left: 25%;
-            
-        }
-        #s3{
-            margin-right: 25%;
-        }
-        #s4{
-            margin-left: 25%;
-        }
+    #s2{
+        margin-left: 25%;
+    }
 
+    #s3{
+        margin-right: 25%;
+    }
+
+    #s4{
+        margin-left: 25%;
+    }
+
+    .arbete{
+        
+        grid-template-areas: 
+        "h ul1 ul1"
+        "as1 as1 as1"
+        "ar ar ar"
+        "as2 as3 as4"
+        "as5 as6 as7"
+        "f1 f1 f1"
+        "f2 f2 f2";
+    }
+
+    #ar {
+        background-color: white;
+
+    }
+
+    .om{
+        grid-template-rows: 20% 20% 50% 65% 10% 10%;
+
+        grid-template-areas: 
+        "h h ul ul"
+        "aside1 aside1 aside1 aside1"
+        "art art art art"
+        "aside2 aside2 aside2 aside2" 
+        "f1 f1 f1 f1"
+        "f2 f2 f2 f2"
         
 
-
-
-
-            .arbete{
-                
-                grid-template-areas: 
-                "h ul1 ul1"
-                "as1 as1 as1"
-                "ar ar ar"
-                "as2 as3 as4"
-                "as5 as6 as7"
-                "f1 f1 f1"
-                "f2 f2 f2"
-                
-        
-                ;
-            }
-        #ar {
-            background-color: white;
-
-        }
-    
-
-
-
-        .om{
-            grid-template-rows: 20% 20% 50% 50% 10% 10%;
-
-            grid-template-areas: 
-            "h h ul ul"
-            "aside1 aside1 aside1 aside1"
-            "art art art art"
-            "aside2 aside2 aside2 aside2" 
-            "f1 f1 f1 f1"
-            "f2 f2 f2 f2"
-            
-    
-            ;
-        }
-  
-
-    
-}
+        ;
+    }  
+} 
